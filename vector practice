@@ -1,0 +1,23 @@
+//Going through a vector
+
+vector<string> liked = {"linux", "manual", "cuck"};
+
+vector<string> disliked = {"apple", "applewatch", "beta",};
+
+cout << "Enter a word: ";
+string temp;
+cin >> temp;
+
+for(string x : liked)
+{
+    if (temp == x)
+    {
+        cout << "Liked word!\n";
+    }
+}
+for(string x : disliked)
+    if (temp == x)
+    {
+    cout << "Disliked word!\n";
+    }
+
