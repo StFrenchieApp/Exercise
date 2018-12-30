@@ -1,0 +1,53 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+#include <stdio.h>
+using namespace std;
+inline void keep_window_open() { char ch; cin>>ch; }
+
+/**
+ * Write a program that consists of a while-loop that (each time around the loop) reads in two ints and then prints them.
+ * Exit the program when a terminating '|' is entered.
+ */
+
+int main()
+{
+    vector<int> numbers;
+    bool w = true;
+    while(w)
+    {
+        cout << "enter the first number: ";
+        char first;
+        cin >> first;
+        if (first == '|')
+        {
+            break;
+        }
+        numbers.push_back(first);
+
+        cout << "enter the second number: ";
+        char second;
+        cin >> second;
+        if (second == '|')
+        {
+            break;
+        }
+        numbers.push_back(second);
+
+
+
+        //cout << "first: " << first << endl << "second: " << second << endl;
+        for(char l:numbers)
+        {
+            cout << l << endl;
+        }
+
+
+    }
+
+
+
+return 0;
+}
